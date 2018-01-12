@@ -11,10 +11,11 @@ public class Creature {
     private String type;
 
     public Creature(String type) {
-        this.type=type;
+        this.type = type;
     }
+
     public boolean compatibleWith(Creature creature) {
-        if ( !this.getClass().equals(creature.getClass()) )
+        if (!this.getClass().equals(creature.getClass()))
             return false;
 
         return !creature.type.equals(this.type);

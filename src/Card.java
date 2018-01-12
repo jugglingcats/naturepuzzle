@@ -7,10 +7,8 @@
  */
 public class Card {
     Creature[] creatures;
-    int num;
 
-    public Card(int i, Creature[] creatures) {
-        this.num=i;
+    public Card(Creature[] creatures) {
         this.creatures=creatures;
     }
 }
